@@ -638,8 +638,7 @@ public class FFmpegKitFlutterPlugin implements FlutterPlugin, ActivityAware, Met
                 break;
         }
     }
-
-    protected void init(final BinaryMessenger messenger, final Context context, final Activity activity, final ActivityPluginBinding activityBinding) {
+protected void init(final BinaryMessenger messenger, final Context context, final Activity activity, final ActivityPluginBinding activityBinding) {
     registerGlobalCallbacks();
 
     if (methodChannel == null) {
@@ -665,7 +664,7 @@ public class FFmpegKitFlutterPlugin implements FlutterPlugin, ActivityAware, Met
     }
 
     Log.d(LIBRARY_NAME, String.format("FFmpegKitFlutterPlugin %s initialized with context %s and activity %s.", this, context, activity));
-    } 
+}
 
 
     protected void uninit() {
